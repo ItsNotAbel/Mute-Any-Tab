@@ -1,5 +1,14 @@
 {
-    "name" : "Mute Any Tab",
-    "version" : "0.1.0",
-    "description" : "Uses Key Shortcuts to Mute Tabs",
+    "name" :"Mute Any Tab",
+    "version": "0.1.0",
+    "description": "Uses Key Shortcuts to Mute Tabs",
+    "permissions": ["tabs", "storage"],
+    "background": {
+        "service_worker" : "background.js"
+    },
+    "action": {
+    "default_title": "Mute Any Tab",
+    "default_popup": "popup.html"
+    },
+    "manifest_version" : 3
 }
