@@ -1,0 +1,1 @@
+This Chrome-based extension allows you to use custom key shortcuts to toggle mute your tab in many different ways, including toggle-mute the tab you are on, toggle-mute every tab but the tab you are on and toggle-mute every tab
