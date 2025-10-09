@@ -6,10 +6,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;...;1,900&display=swap" rel="stylesheet">
     </head>
     <div class = "keybind">
-        <div class="container">
-            <div class="instruct">Mute Any Tab</div>
-            <label for="toggleMute" id="toggleMuteLabel">Key Shortcut For Toggle Mute</label>
-            <input type="text" id="toggleMute" name="toggleMute" readonly>
+        <div class="instruct">Mute Any Tab</div>
+
+        <div class = "functions">
+        <span id="toggleMuteLabel">Toggle Mute Tab</span>
+        <div class = innerFlex>
+        <input type="text" id="toggleMute" name="toggleMute" placeholder="Key Shortcut" readonly>
+        <button type = "button" id="recordButton" name="recordButton">Record</button>
+        </div>
+
+        <div class = "functions2">
+            <span id="toggleMuteLabelAll">Toggle Mute All Tabs</span>
+            <div class = innerFlex2>
+            <input type="text" id="toggleMuteAll" name="toggleMuteAll" placeholder="Key Shortcut" readonly>
+            <button type = "button" id="recordButtonAll" name="recordButtoAll">Record</button>
+        </div>
+        </div>
         </div>
     </div>
 </html>

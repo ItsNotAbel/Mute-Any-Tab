@@ -1,13 +1,27 @@
+:root {
+      --shadow-title:
+        -1.5px -1.5px 0 black, 
+        1.5px -1.5px 0 black,  
+        -1.5px 1.5px 0 black,  
+        1.5px 1.5px 0 black;
+
+    --shadow:
+        -1px -1px 0 black, 
+        1px -1px 0 black,  
+        -1px 1px 0 black,  
+        1px 1px 0 black;
+}
+
 .keybind {
     width: 350px;
     height: 400px;
-    background-color: #6e7c96;
-}
+    background: linear-gradient(to bottom, #362b3c5e, #1f1424);
+ }
 
 html, body {
-    margin: 1px;
-    padding: 1px;
-    background-color: grey;
+    margin: 0.2px;
+    padding: 0.2px;
+    background-color: black;
 }
 
 
@@ -18,24 +32,71 @@ html, body {
     font-weight: 700;
     font-style: normal;
     color: white;
-    text-shadow: black;
     padding-top: 10px;
-    text-shadow:
-    -1.5px -1.5px 0 black, 
-    1.5px -1.5px 0 black,  
-    -1.5px 1.5px 0 black,  
-    1.5px 1.5px 0 black;
+    padding-bottom: 20px;
+    text-shadow: var(--shadow-title);
+}
+
+
+.functions, .functions2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.innerFlex, .innerFlex2 {
+    display: flex;
+    gap: 5px;
 }
 
 #toggleMuteLabel {
-    text-align: center;
+    align-self: center;
     color: white;
-
-}
-
-#toggleMute {
-    display: block;
-    flex-direction: column;
-    padding-left: 100px;
+    padding-bottom: 10px;
+    font-size: 17.5px;
+    text-shadow: var(--shadow);
+    justify-content: center;
     
 }
+
+
+#toggleMute, #toggleMuteAll {
+    padding: 7.5px 80px 7.5px 10px;
+    margin-left: 10px;
+    background-color: rgb(51, 32, 67);
+    border: none;
+    font-size: 15px;
+    user-select: none;
+}
+
+#recordButton, #recordButtonAll {
+    background: transparent;
+    border-color: transparent;
+    padding: 7.5px 15px 7.5px 15px;
+    color: white;
+    text-shadow: var(--shadow);
+    margin-left: 3px;
+    margin-top: 2.5px;
+    border-radius: 12px;
+    
+}
+
+#recordButton:hover, #recordButtonAll:hover {
+    background-color: rgb(85, 65, 96, 0.6);
+}
+
+#toggleMuteLabelAll {
+    align-self: center;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-size: 17.5px;
+}
+
+#toggleMute::placeholder , #toggleMuteAll::placeholder {
+    color: rgb(255, 255, 255, 75%);
+    padding-top: 5px;
+    
+}
+
+
