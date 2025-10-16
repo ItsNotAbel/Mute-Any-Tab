@@ -5,7 +5,11 @@ document.addEventListener("keydown", function(event) {
         chrome.runtime.sendMessage({action: "muteAllTabs"})
     }
     
-    else if (event.key === "x" && (event.ctrlKey || event.metaKey)) {
+    else if (event.key === "x" && (event.ctrlKey || event.metaKey) && event.shiftKey === false) {
         chrome.runtime.sendMessage({action: "muteTab"})
+    }
+
+    else if (event.key === "x" && (event.ctrlKey || event.metaKey) && event.shiftKey === true) {
+        chrome.runtime.sendMessage({action: "muteAllTabsExceptCurr"})
     }
 })
