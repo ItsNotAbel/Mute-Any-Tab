@@ -38,13 +38,13 @@ html, body {
 }
 
 
-.functions, .functions2 {
+.functions, .functions2, .functions3 {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.innerFlex, .innerFlex2 {
+.innerFlex, .innerFlex2, .innerFlex3 {
     display: flex;
     gap: 5px;
 }
@@ -53,14 +53,21 @@ html, body {
     align-self: center;
     color: white;
     padding-bottom: 10px;
-    font-size: 17.5px;
+    font-size: 15px;
     text-shadow: var(--shadow);
-    justify-content: center;
-    
+}
+
+#toggleMuteLabelAll, #muteAllTabsExceptCurrLabel {
+    align-self: center;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-size: 15px;
+    text-shadow: var(--shadow);
 }
 
 
-#toggleMute, #toggleMuteAll {
+#toggleMute, #toggleMuteAll, #toggleMuteAllExceptCurr {
     padding: 7.5px 80px 7.5px 10px;
     margin-left: 10px;
     background-color: rgb(51, 32, 67);
@@ -85,13 +92,7 @@ html, body {
     background-color: rgb(85, 65, 96, 0.6);
 }
 
-#toggleMuteLabelAll {
-    align-self: center;
-    color: white;
-    padding-bottom: 10px;
-    padding-top: 15px;
-    font-size: 17.5px;
-}
+
 
 #toggleMute::placeholder , #toggleMuteAll::placeholder, #toggleMuteAllExceptCurr::placeholder {
     color: rgb(255, 255, 255, 75%);
@@ -99,8 +100,7 @@ html, body {
     
 }
 
-{
-    
-}
+
+
 
 
