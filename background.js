@@ -79,3 +79,4 @@ async function checkAllMuted() { // Function to check all tabs, if all tabs are 
     return bool;
     
 }
+

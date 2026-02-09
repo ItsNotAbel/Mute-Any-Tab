@@ -14,7 +14,7 @@
 
 .keybind {
     width: 350px;
-    height: 400px;
+    height: 750px;
     background: linear-gradient(to bottom, #362b3c5e, #1f1424);
  }
 
@@ -74,6 +74,7 @@ html, body {
     border: none;
     font-size: 15px;
     user-select: none;
+    border-radius: 9.5px;
 }
 
 #recordButton, #recordButtonAll, #recordButtonAllExceptCurr {
@@ -99,6 +100,8 @@ html, body {
     padding-top: 5px;
     
 }
+
+
 
 
 
